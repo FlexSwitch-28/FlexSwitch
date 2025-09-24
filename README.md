@@ -4,7 +4,7 @@ Abdelgawad, Yassin ,300486488
 El Hossari, Mohamad,300462704
 El Saddik, Abdul Rahman , 300476143
 Emiko, Miko
-Osman, Abdoulgani
+Osman Abdoulgani, 300452310
 Qureshi, Jibran
 
 FlexSwitch - Groupe 28
