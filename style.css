@@ -39,15 +39,20 @@ body{
 
 }
 .two{
-
-  height: 40dvh;
+  display: flex;
+  flex-direction: column;
+  height: 60dvh;
   background-color: blanchedalmond;
-
+  text-align: center;
+ 
 }
 #hp1{
    font-weight: bold;
-   font-size:x-large;
+   font-size:xx-large;
    padding-left: 20px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+
 }
 #p2
 {
@@ -65,4 +70,39 @@ body{
 
 }
 
+#img {
 
+
+  border-radius: 30px;
+  width: 30dvh;
+  height: 30dvh;
+
+}
+#p2Container{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+
+
+
+}
+.p2Container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#p2Text{
+
+  font-size: large;
+  font-style: italic;
+  text-align: center;
+}
+.three{
+
+  display: flex;
+  flex-direction: column;
+  height: 60dvh;
+  background-color: limegreen;
+  text-align: center;
+}
