@@ -1,1 +1,159 @@
-I created a team page, make sure you pull to have it in your GitHub.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAbout- FlexSwitch</title>
+    <meta name="description" content="Meet the dedicated team behind Flexswitch adaptive footwear." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!--Header -->
+    <header class="site-header" role="banner">
+        <nav class="nav" aria-label="Primary">
+            <a class="brand" href="index.html">
+                <div class="brand_logo" aria-hidden="true">
+                    <img src="assets/Logo.png" alt="Flexswitch official logo" class="brand__logo">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"></svg>
+                </div>
+                <span class="brand__name">Flexswitch</span>
+            </a>
+            <div class="menu" role="menubar">
+                <a role="menuitem" href="products.html">Products</a>
+                <a role="menuitem" aria-current="page" href="about.html">About</a>
+                <button id="cartButton" class="icon-btn" aria-haspopup="dialog" aria-controls="cartDrawer"
+                    aria-expanded="false" aria-label="Open cart">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="9" cy="21" r="1" />
+                        <circle cx="20" cy="21" r="1" />
+                        <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h7.72a2 2 0 001.99-1.73L21 6H6"></path>
+                    </svg>
+                    <span id="cartBadge" class="badge" hidden>0</span>
+                </button>
+            </div>
+            <button class="icon-btn hamburger" aria-label="Open menu" title="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"
+                    aria-hidden="true">
+                    <path d="M3 6h18M3 12h18M3 18h18"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <!--About hero -->
+    <section class="hero-hero--about" aria-label="About Flexswitch hero">
+        :: before
+        <div class="hero__content">
+            <h1 class="hero__title">About Flexswitch</h1>
+            <p class="about-lead">
+                "Flexswitch is an adaptive footwear concept that adjusts to the wearer’s foot size and
+                shape. Our aim is to reduce sizing friction, extend product life, and improve comfort and
+                accessibility across users."
+            </p>
+        </div>
+        :: after
+    </section>
+    <!-- ===== Concept paragraph ===== -->
+    <section class="section container" aria-labelledby="concept">
+        <h2 id="concept" class="section__title">The Concept</h2>
+        <p style="max-width : 75ch; color:#30374a">
+            "The Flexswitch prototype combines a flexible sole structure with adjustable upper components to
+            expand or contract across a defined size range. The intended benefits include fewer
+            size‑specific purchases for families, lower return rates for retailers, and broader
+            accessibility for contexts such as rentals and humanitarian supply chains. Our current course
+            project focuses on a functional front‑end demonstration and a physical or virtual mock‑up to
+            illustrate the adjustment mechanism and user experience."
+        </p>
+    </section>
+    <!-- ===== Team Grid (6 founders) ===== -->
+    <section class="section container" aria-labelledby="team">
+        <h2 id="team" class="section__title">Founding Team</h2>
+        <div class="team" role="list">
+            <!--Replace each placeholder image in / assets and fill in real names/roles/links-->
+            <article class="member" role="listitem">
+                <img src="assets/member1.jpg" alt="Portrait of Founder 1">
+                <h3>Founder 1</h3>
+                <p>Product & Project Lead</p>
+            </article>
+            <article class="member" role="listitem">
+                <img src="assets/member2.jpg" alt="Portrait of Founder 2">
+                <h3>Founder 2</h3>
+                <p>Technical Lead (Frontend)</p>
+            </article>
+            <article class="member" role="listitem">
+                <img src="assets/member3.jpg" alt="Portrait of Founder 3">
+                <h3>Founder 3</h3>
+                <p>UX/UI & Accessibility</p>
+            </article>
+            <article class="member" role="listitem">
+                <img src="assets/member4.jpg" alt="Portrait of Founder 4">
+                <h3>Founder 4</h3>
+                <p>Content & Marketing</p>
+            </article>
+            <article class="member" role="listitem">
+                <img src="assets/member5.jpg" alt="Portrait of Founder 5">
+                <h3>Founder 5</h3>
+                <p>QA and Analytics</p>
+            </article>
+            <article class="member" role="listitem">
+                <img src="assets/member6.jpg" alt="Portrait of Founder 6">
+                <h3>Founder 6</h3>
+                <p>Operations & Partnerships</p>
+            </article>
+            <div>
+                <section>
+                    <!--===== Footer ===== -->
+                    <footer class="site-footer">
+                        <div class="container" style="padding:0;">
+                            <p>
+                                "©"
+                                <span id="year">2025</span>
+                                "Flexswitch. All rights reserved."
+                            </p>
+                        </div>
+                    </footer>
+                    <!-- (Optional) Shared cart drawer markup can be omitted here if you don't want a cart on About. Including it keeps UI consistent. -->
+            </div id="cartDrawer" class="drawer" role="dialog" aria-modal="true" aria-hidden="true"
+                aria-labelledby="cartTitle">
+            <button class="drawer__scrim" tabindex="-1" aria-label="Close cart"></button>
+            <section class="drawer__panel" aria-describedby="cartDesc">
+                <header class="drawer__header">
+                    <h2 id="cartTitle" style="margin:0">Your Cart</h2>
+                    <button id="closeCart" class="icon-btn" aria-label="Close cart">
+                        <svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none"
+                            stroke-width="2" aria-hidden="true">
+                            <path d="M6 6l12 12M6 18L18 6" />
+                            <path>
+                        </svg>
+                    </button>
+                </header>
+                <div id="cartDesc" class="drawer__body">
+                    <div id="cartItems"></div>
+                    <p id="emptyMsg" style="opacity:.7">Your cart is currently empty.</p>
+                </div>
+                <footer class="drawer__footer">
+                    <div
+                        style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px">
+                        <strong>Total</strong>
+                        <strong id="cartTotal">$0.00</strong>
+                    </div>
+                    <button class="btn btn--primary" style="width:100%" disabled
+                        title="Payments disabled in demo">Checkout (demo)</button>
+                </footer>
+                <section>
+                    <div>
+                        <!-- Global JS -->
+                        <script src="app.js" defer></script>
+</body>
+
+</html>
