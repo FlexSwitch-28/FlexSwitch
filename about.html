@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Team page -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About – Flexswitch</title>
+  <meta name="description" content="Meet the Flexswitch founding team and learn about our adaptive footwear concept." />
+
+  <!-- Web font (swap later if you upload a brand font) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== Header (shared) ===== -->
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <div class="brand__logo" aria-hidden="true">
+          <img src="assets/Logo.png" alt="Flexswitch official logo" class="brand__logo">          
+        </div>
+        <span class="brand__name">Flexswitch</span>
+      </a>
+      <div class="menu" role="menubar">
+        <a role="menuitem" href="index.html">Home</a>
+        <a role="menuitem" href="products.html">Products</a>
+        <a role="menuitem" aria-current="page" href="about.html">About</a>
+        <button id="cartButton" class="icon-btn" aria-haspopup="dialog" aria-controls="cartDrawer" aria-expanded="false" aria-label="Open cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h7.72a2 2 0 001.99-1.73L21 6H6"/></svg>
+          <span id="cartBadge" class="badge" hidden>0</span>
+        </button>
+      </div>
+      <button class="icon-btn hamburger" aria-label="Open menu" title="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== About us (the first para) ===== -->
+  <section class="hero hero--about" aria-label="About Flexswitch hero">
+    <div class="hero__content">
+      <h1 class="hero__title">About Flexswitch</h1>
+      <p class="about-lead">Flexswitch is an adaptive footwear concept that adjusts to the wearer’s foot size and shape. Our aim is to reduce sizing friction, extend product life, and improve comfort and accessibility across users.</p>
+    </div>
+  </section>
+
+  <!-- ===== Concept second para ===== -->
+  <section class="section container" aria-labelledby="concept">
+    <h2 id="concept" class="section__title">The Concept</h2>
+    <p style="max-width:75ch; color:#30374a">
+      The Flexswitch prototype combines a flexible sole structure with adjustable upper components to expand or contract across a defined size range. The intended benefits include fewer size‑specific purchases for families, lower return rates for retailers, and broader accessibility for contexts such as rentals and humanitarian supply chains. Our current course project focuses on a functional front‑end demonstration and a physical or virtual mock‑up to illustrate the adjustment mechanism and user experience.
+    </p>
+  </section>
+
+  <!-- ===== Team grid (6 founders) ===== -->
+  <section class="section container" aria-labelledby="team">
+    <h2 id="team" class="section__title">Founding Team</h2>
+    <div class="team" role="list">
+      <!-- Replace each placeholder image in /assets and fill in real names/roles/links -->
+      <article class="member" role="listitem">
+        <img src="assets/team-1.jpg" alt="Portrait of Founder 1">
+        <h3>Founder 1</h3>
+        <p>Product & Project Lead</p>
+      </article>
+      <article class="member" role="listitem">
+        <img src="assets/team-2.jpg" alt="Portrait of Founder 2">
+        <h3>Founder 2</h3>
+        <p>Technical Lead (Frontend)</p>
+      </article>
+      <article class="member" role="listitem">
+        <img src="assets/team-3.jpg" alt="Portrait of Founder 3">
+        <h3>Founder 3</h3>
+        <p>UX/UI & Accessibility</p>
+      </article>
+      <article class="member" role="listitem">
+        <img src="assets/team-4.jpg" alt="Portrait of Founder 4">
+        <h3>Founder 4</h3>
+        <p>Content & Marketing</p>
+      </article>
+      <article class="member" role="listitem">
+        <img src="assets/team-5.jpg" alt="Portrait of Founder 5">
+        <h3>Founder 5</h3>
+        <p>QA & Analytics</p>
+      </article>
+      <article class="member" role="listitem">
+        <img src="assets/team-6.jpg" alt="Portrait of Founder 6">
+        <h3>Founder 6</h3>
+        <p>Operations & Partnerships</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container" style="padding:0;">
+      <p>© <span id="year"></span> Flexswitch. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- We dont need the card here -->
+  
+
+  <!-- Global JS -->
+  <script src="app.js" defer></script>
+</body>
+</html>
