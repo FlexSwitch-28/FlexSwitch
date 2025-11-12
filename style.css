@@ -94,7 +94,7 @@ img{max-width:100%; display:block}
   transform: scale(1.02);
 }
 
-/* dark overlay to ensure text stands out clearly */
+/* dark overlay so the text stands out clearly (i want ur opinions) */
 .hero::after {
   content: "";
   position: absolute;
